@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio-SnehaAnkii</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./tailwind.config.js"></script>
+</head>
+<body  class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <nav class ="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./images/Logo7.png" alt ="Logo" class="w-28 cursor-pointer mr-14 dark:hidden">
+        <img src="./images/Logo61.png" alt ="Logo" class="w-28 cursor-pointer mr-14 hidden dark:block">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 font-Ovo bg-white 
+        shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent font-Ovo dark:border dark:border-white/50 dark:bg:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+        <button>
+            <img src="./images/moon.png" alt="moon-icon" class="w-6 dark:hidden" onclick="toggleTheme()">
+            <img src="./images/sun.png" alt="moon-icon" class="w-6 hidden dark:block" onclick="toggleTheme()">
+        </button>
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border 
+        border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">Contact
+            <img class="w-3 dark:hidden" src="./images/right-arrow.png" alt = "up">
+            <img class="w-3 hidden dark:block" src="./images/arraw-right1.png" alt = "up">
+        </a>
+        <!--<a href="https://github.com/cvsnehankita"><img src="./images/gmail.png" class="w-6"></a>
+        <a href="https://www.linkedin.com/in/snehankita-channe/"><img src="./images/linkedin.png" class="w-6"></a>
+        <a href="https://github.com/cvsnehankita"><img src="./images/github.png" class="w-6"></a>-->
+            
+        <button class="block md:hidden ml-3" onClick="openMenu()">
+            <img src="./images/menu-black.png" alt="" class="w-6 dark:hidden">
+            <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block ">
+        </button>
+        </div>
+        <!----------------------mobile view----------------------------->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 
+        w-64 z-50 h-screen bg-rose-50 transi duration-500 font-Ovo dark:bg-[#2a004a] dark:text-white">
+        <div class="absolute right-6 top-6" onClick="closeMenu()">
+            <img src="./images/close-button.png" alt="" class="w-5 cursor-pointer dark:hidden">
+            <img src="./images/close1.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+        </div>
+            <li><a href="#top" onClick="closeMenu()">Home </a></li>
+            <li><a href="#about" onClick="closeMenu()">About</a></li>
+            <li><a href="#services" onClick="closeMenu()">Services</a></li>
+            <li><a href="#projects" onClick="closeMenu()">Projects</a></li> 
+            <li><a href="#contact" onClick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+    <!-------------------Header Section-------------------->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/profile-img.jpeg" alt="" class="rounded-full w-32">
+        <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3 font-Ovo typingEffect">Hi! I'm Snehankita Channe <img src="./images/wave-hand.png" alt="" class="w-6"> </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[42px] font-Ovo">Application Development Lead Analyst based in India.</h1>
+        <p class="max-w-2xl mx-auto font-Ovo">Currently in Seoul, seeking opportunities to work here.<br>I have worked with Citi Bank, John Deere, 
+            and Yash Technologies, and I have over eight years of experience with Java, Angular, Microservices, and DevOps.</p>
+            <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+                <a href="#contact" class="px-10 py-3 border rounded-full font-Ovo bg-gradient-to-r from-[#b820e6] 
+                to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent">
+                Hire me for work <img src="./images/arraw-right1.png" alt="" class="w-4"> </a>
+                <a href="./assets/SnehankitaResume2024.pdf" download class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2
+                bg-white dark:text-black">
+                    My Resume <img src="./images/download.png" alt="" class="w-4"> </a>
+            </div>
+    </div>
+    <!---------------------About me------------------------------>
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+        <h2 class="text-center mb-2 text-5xl font-Ovo">About Me</h2> 
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./images/IMG_1429.jpeg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl font-Ovo">Experienced IT professional with 8+ years specializing in Spring Boot, Microservices, Angular, Kubernetes, and DevOps.
+                    Demonstrated expertise in designing, deploying, and maintaining scalable applications within agile environments. Known for a proactive approach to continuous learning and professional growth, along with a strong commitment to collaboration and knowledge sharing with industry peers. 
+                    <br>
+                    Having worked in a Banking domain, I understand every organisation needs a practical path to meaningful
+                    innovation, As a Lead Application Development Analyst with background in engineering, I believe product is the 
+                    core of any thriving business or service.
+                    <br>
+                    Embracing a "fail fast, fix fast" approach, I try to rapidly test ideas, learn from setbacks, and itrate solutions,
+                    leveraging my technical and business skills to efficiently solve complex problems with agility.
+                    <br>
+                    I thrive on collaboration and believe that the best ideas come to life when diverse minds unite. Drop me a message or email me to share our visions into reality.
+                    
+                </p>
+                <!-- <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white 
+                    dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./images/rating.png" alt="" class="w-7 mt-3 dark:hidden">
+                        <img src="./images/rating.png" alt="" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Clients</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">30+ Happy customers</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                        <img src="./images/atm-card.png" alt="" class="w-7 mt-3 dark:hidden">
+                        <img src="./images/atm-card.png" alt="" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Banking Experience</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Citi Bank / HDFC Bank / Mashreq Bank</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                    hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                        <img src="./images/project-bl.png" alt="" class="w-7 mt-3 dark:hidden">
+                        <img src="./images/project-wh.png" alt="" class="w-7 mt-3 hidden dark:block">
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Built more than 20 projects</p>
+                    </li>
+                   </ul>  -->   
+                                </div>
+        </div>  
+    </div>
+    <!--------------------------Resume------------------------------------->
+    <div id="resume" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">My Resume</h4>
+        <h2 class="text-center mb-2 text-5xl font-Ovo">Education</h2> 
+    <div>
+    <div class="grid grid-cols-auto gap-6 my-10">    
+    <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+    <li class="mb-10 ms-6">            
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white font-Ovo">Bachelor of Engineering: Electronics & Telecommunication Engineering, 2012-2016 <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 font-Ovo">RTM University Nagpur, Scored a GPA 8.23, with Robotics and Debate Achievement Awards. </time>
+    </li>
+    <li class="mb-10 ms-6">
+        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+            </svg>
+        </span>
+        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white font-Ovo">HSC: COMPUTER SCIENCE (CBSE), 2011-2012</h3>
+        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 font-Ovo">Scored a GPA 8.0, out of 3 Outstanding Personality </time>
+    </li>
+</ol>
+    </div>
+    <h2 class="text-center mb-2 text-5xl font-Ovo">Experience</h2>
+    <div class="grid grid-cols-auto gap-6 my-10">    
+        <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+        <li class="mb-10 ms-6">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white font-Ovo">LEAD APPLICATION DEV ANALYST | MAY 2021 - Aug-2024 <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span></h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 font-Ovo">CITICORP SERVICES INDIA, PUNE, MAHARASHTRA
+            </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 font-Ovo">• Implemented CI/CD pipelines using Jenkins, automating the build, test, and
+                deployment processes to facilitate seamless integration and delivery of
+                microservices.
+                • Demonstrated proficiency in creating and designing EKS clusters on AWS
+                cloud infrastructure, optimizing resources and configurations to support the
+                deployment of microservices-based applications.<br>
+                • Configured and maintained Helm charts for streamlined deployment and
+                updates of Kubernetes applications.<br>
+                • Collaborated effectively with cross-functional teams including developers, QA
+                engineers, and system administrators to streamline deployment workflows and
+                enhance collaboration across the software development lifecycle.<br>
+                • Designed and implemented interactive user analytics dashboards using Java
+                and Angular, providing real-time data visualization and insights for improved
+                banking applications.<br>
+                • Implemented state management using NgRx for efficient data flow and
+                management in user analytics dashboards, ensuring seamless user interactions
+                and updates.</p>
+        </li>
+        <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white font-Ovo">FULL-STACK ENGINEER | AUG 2019 - APR 2021</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 font-Ovo">YASH TECHNOLOGIES, PUNE, MAHARASHTRA</time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 font-Ovo">
+                • Worked for John Deere services, under Enterprise Product Delivery Suite of
+                SpringBoot, Angular applications. Designed and implemented a robust set of
+                microservices architecture, leveraging best practices to ensure scalability, fault
+                tolerance, and maintainability of distributed systems.<br>
+                • Recognized for excellent teamwork and leadership in quick project delivery,
+                Boosted team productivity by 15% by implementing Agile Scrum practices.
+                </p>
+        </li>
+        <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white font-Ovo">BACKEND JAVA DEVELOPER | DEC 2016 - JUN 2019</h3>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 font-Ovo">VYOM LABS PRIVATE LIMITED, PUNE, MAHARASHTRA</time>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 font-Ovo">
+                • Developed and documented REST based Java plugins enhancing
+                  AutomationEdge tool features as per Client requirements. Used Maven, Core
+                  Java, Sprinboot, ETL, Pentaho Data Integration as tools, achieved 7% increase in
+                  customer satisfaction through efficient tool development.
+                </p>
+        </li>
+    </ol>
+</div>
+<h2 class="text-center mb-2 text-5xl font-Ovo">Skills</h2>
+<div class="grid grid-cols-auto gap-6 my-10">
+    <div class="col-md-6">
+            <h4>Java / RESTFUL / Microservices</h4>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
+            </div>
+            <h4>ANGULARJS / CASSANDRA / HTML / CSS</h4>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 80%"> 80%</div>
+            </div>
+            <h4>DATABSES: Postgres, Oracle, MongoDB</h4>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 80%"> 80%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Java / RESTFUL / Microservices</h4>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> 90%</div>
+            </div>
+            <h4>DevOps: Docker / Helm</h4>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> 70%</div>
+            </div>
+            <h4>Cloud Services: Kubernetes / AWS: IAM, EC2, EKS, S3, RDS</h4>
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> 70%</div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center mb-2 text-5xl font-Ovo">Tools I use</h2>
+    <div class="grid grid-cols-auto gap-6 my-10">    
+    <ul class="flex items-center gap-3 sm:gap-5  mx-[30%]"> 
+    <li class="flex items-center justify-center my-[2%] w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/IJ.jpeg" alt="" class="w-5 sm:w-7 "></li>
+    
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/spring cloud.png" alt="" class="w-5 sm:w-7 "></li>
+
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/vscode.png" alt="" class="w-5 sm:w-7 "></li>
+    
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/mvn.png" alt="" class="w-5 sm:w-7 "></li>
+    
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/jenkins.png" alt="" class="w-5 sm:w-7 "></li>
+
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/k8.jpeg" alt="" class="w-5 sm:w-7 "></li>
+
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/git.png" alt="" class="w-5 sm:w-7 "></li>
+    
+    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg
+    cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 ">
+    <img src="./images/jira.jpeg" alt="" class="w-5 sm:w-7 "></li>
+    </ul>
+</div>
+
+</div>
+</div>
+</div>
+    </div>
+    <!--------------------------Services-------------------------------------->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">What I offer</h4>
+        <h2 class="text-center mb-2 text-5xl font-Ovo">My Services</h2> 
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">The services I provide are listed below. Hope you will like them.</p>
+        <div class="grid grid-cols-auto gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-2 duration-500 dark:hover:bg-darkHover dark:hover shadow-white">
+                <img src="./images/web34.png" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Web Design</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I'm driven by a keen desire to constantly grow,..</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5"> Read more..
+                    <img src="./images/right-arrow.png" class="w-4 "></a>   
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-2 duration-500 dark:hover:bg-darkHover dark:hover shadow-white">
+                <img src="./images/cicd4.png" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">CI/CD Implementation and Deployment</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I'm driven by a keen desire to constantly grow,..</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5"> Read more..
+                    <img src="./images/right-arrow.png" class="w-4 "></a>   
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-2 duration-500 dark:hover:bg-darkHover dark:hover shadow-white">
+                <img src="./images/cloud9.png" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Cloud Services</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I'm driven by a keen desire to constantly grow,..</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5"> Read more..
+                    <img src="./images/right-arrow.png" class="w-4 "></a>   
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black 
+                cursor-pointer hover:bg-lightHover hover:-translate-y-2 duration-500 dark:hover:bg-darkHover dark:hover shadow-white">
+                <img src="./images/k88.png" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700 dark:text-white">Kubernetes Deployment using Helm</h3>
+                <p class="text-sm text-gray-600 leading-5 dark:text-white/80">I'm driven by a keen desire to constantly grow,..</p>
+                <a href="" class="flex items-center gap-2 text-sm mt-5"> Read more..
+                    <img src="./images/right-arrow.png" class="w-4 "></a>   
+            </div>
+        </div>     
+
+    </div>
+    <!--------------------------Projects-------------------------------------->
+    <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
+        <h2 class="text-center mb-2 text-5xl font-Ovo">My Latest Work</h2> 
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"> I'm driven by a keen desire to constantly grow, learn, unravel
+            opportunities, and network with industry professionals. Excited and
+            motivated to contribute to your dynamic team</p>
+        <div class="grid grid-cols-auto my-10 gap-5 dark:text-black ">
+            <div class="aspect-square bg-[url('./images/note.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Coming soon.. </h2>
+                    <p class="text-sm text-gray-700">Web design</p>
+                </div>
+                <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center 
+                shadow-[2px_2py_0_#000] group-hover:bg-lime-300 transition">
+                    <img src="./images/circularArraw.png" class="w-5">
+                </div>
+        </div>    
+    </div>
+    <div class="aspect-square bg-[url('./images/star1.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+        <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+            <div>
+                <h2 class="font-semibold">Coming soon..</h2>
+                <p class="text-sm text-gray-700">Web design</p>
+            </div>
+            <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center 
+            shadow-[2px_2py_0_#000] group-hover:bg-lime-300 transition">
+                <img src="./images/circularArraw.png" class="w-5">
+            </div>
+    </div>    
+</div>
+<div class="aspect-square bg-[url('./images/storm2.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+            <h2 class="font-semibold">Coming soon..</h2>
+            <p class="text-sm text-gray-700">Web design</p>
+        </div>
+        <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center 
+        shadow-[2px_2py_0_#000] group-hover:bg-lime-300 transition">
+            <img src="./images/circularArraw.png" class="w-5">
+        </div>
+</div>    
+</div>
+<div class="aspect-square bg-[url('./images/storm.jpeg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+    <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+        <div>
+            <h2 class="font-semibold">Coming soon..</h2>
+            <p class="text-sm text-gray-700">Web design</p>
+        </div>
+        <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center 
+        shadow-[2px_2py_0_#000] group-hover:bg-lime-300 transition">
+            <img src="./images/circularArraw.png" class="w-5">
+        </div>
+    </div>    
+    </div>
+    </div>
+    <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full
+    py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-[#2a004a]">Show more
+    <img src="./images/right-arrow.png" class="w-4 dark:hidden">
+    <img src="./images/arraw-right1.png" class="w-4 hidden dark:block">
+    </a>
+</div>
+    <!--------------------------Contact-------------------------------------->
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url-('./images/header-bg-color.png')] bg-no-repeat bg-[length:90%_auto]
+    bg-center dark:bg-none">
+        <h4 class="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
+        <h2 class="text-center mb-2 text-5xl font-Ovo">Get in touch</h2> 
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"> I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="c346e68a-330b-4933-8ef8-89cefc1fadbf">
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
+                dark:bg-darkHover/30 dark:border-white/90" required name="name">
+                <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white
+                dark:bg-darkHover/30 dark:border-white/90" required name="email">
+            </div>
+            <textarea rows="6" placeholder="Enter your message.." class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6
+            dark:bg-darkHover/30 dark:border-white/90" required name="message"></textarea>
+            <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black opacity-[80%] text-white
+            rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:bg-darkHover dark:hover:bg-darkHover">Submit<img src="./images/arraw-right1.png" class="w-4"></button>
+        </form>
+    </div>
+    <!-------------------------------footer-------------------------->
+    <div class="mt-20">
+        <div class="text-center">
+           <!-- <img src="./images/Logo123.png" class="w-36 mx-auto mb-2"> -->
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="./images//mail.png" class="w-6 dark:hidden ">
+                <img src="./images/email-white.png" class="w-6 hidden dark:block ">
+                cvsnehankita@gmail.com
+            </div>
+        </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] my-12 py-6">
+        <p>© 2024 Snehankita Channe. All rights reserved.</p>
+        <ul class="flex items-center gap-5 justify-center mt-4 sm:mt-0 ">
+            <li>
+                <a href="https://www.linkedin.com/in/snehankita-channe/"><img src="./images/linkedin.png" class="w-6"></a>
+            </li>
+            <li>
+                <a href="https://github.com/cvsnehankita"><img src="./images/github.png" class="w-6"></a>
+            </li>
+        </ul>
+    </div>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html> 
