@@ -1,0 +1,15 @@
+# Don’t cache HTML (assuming you have index.html in root too)
+/index.html
+  Cache-Control: no-cache
+
+# Don’t cache main JS since the filename is fixed
+/main.js
+  Cache-Control: no-cache
+
+# Cache images for long time
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache assets for long time
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
